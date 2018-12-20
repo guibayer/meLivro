@@ -1,0 +1,133 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MeLivro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+
+
+
+<body>
+    <div class="armacao">
+        <br></br>
+       <nav class="navbar navbar-expand-md">
+			<div class="container">	
+             <div class="collapse navbar-collapse d-flex flex-row-reverse " id="navbarSupportedContent">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuário</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="perfilUsuario.html">Perfil</a>
+                              <a class="dropdown-item" href="editarPerfil.html">Editar Perfil</a>
+                              <a class="dropdown-item" href="carrinho.html">Pedidos</a>
+                              <a class="dropdown-item" href="menuPrincipal.html">Sair</a>
+
+                        </div>
+                  </li>
+              </div>
+            </div>
+       </nav>
+          <a href="menuPrincipal.html"><img src="imagem/logo1.png"  alt="logo" title="MeLivro" height="95px" ></a>
+        <div class="cabecalho">
+                       <a href="cadastroAnuncio.html"> <button class="button button1">Minhas Vendas</button></a>
+                      <a href="historico.html"><button class="button button2">Historico</button></a>
+                      <a href="telacadastro.html"><button class="button button3">Cadastre-se</button></a>
+                      <a href="telalogin.html"><button class="button button4">Entrar</button></a>
+                      
+                   
+           </div>
+
+        <div class="corpo">
+            
+            <div class="menuContainer">
+                
+                 <ul class="menu">
+                    
+                    <li>
+                        <a href="buscaLivros.html">Livro</a>
+                    </li>
+                    
+                    <li>
+                        <a href="buscaRevista.html">Revistas</a>
+                    </li>
+                    
+                    <li>
+                        <a href="buscaRevista.html">Artigos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            </li></li>
+            <br></br>
+
+            <div class="busca">
+                    <form class="form-inline mt-2 mt-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" size="95" placeholder="Digite o produto desejado">
+                     
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >
+                                <img src="imagem/searchicon.png"alt="busca" title="search"  height="15px"/>
+                            </button>
+                
+                             <a href="carrinho.html" class = "btn btn-outline-success my-2 my-sm-0">
+                               <img src="imagem/carrinho.png"alt="carrinho" title="carrinho"  height="21px"/>
+                            </a>
+                        </form>
+                </div>
+            </div>
+            
+            <br></br>
+        <div class="avaliacao">
+            <h2>Avaliação</h2>
+            <br></br>
+            <div class="form">
+              <div class="errors"></div>
+              <p class="label">Comentário:</p>
+              <div class="comments" id="comments" contenteditable="true"></div>
+              <p></p>
+              <p class="label">Nota:</p>
+              <div class="stars">
+                <span class="star-1">&#x2605;</span>
+                <span class="star-2">&#x2605;</span>
+                <span class="star-3">&#x2605;</span>
+                <span class="star-4">&#x2605;</span>
+                <span class="star-5">&#x2605;</span>
+              </div>
+              <div class="you-rated"></div>
+              <hr/>
+              <div id="actions" class="row">
+                      <p class="signin button"> 
+                            <button type="submit" value="enviar" class="btn btn-primary btn-lg btn-block "/> Enviar Avaliação </button>
+                      </p>
+                     </div>
+            </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script>
+              window.clean = true;
+              $('[class^="star-"]').on('click', function() {
+                $(this).siblings().removeClass('selected');
+                $(this).addClass('selected');
+                $(this).prevAll().addClass('selected');
+                var index = $(this).index() + 1;
+                $('.you-rated').text('Você deu nota '+index);
+              });
+             
+            </script>
+                    
+  <br></br>
+  <div class="rodape">
+      Copyright &COPY; 2018 MeLivro. Todos os Direitos Reservados.
+  </div>
+
+</body>
+</html>

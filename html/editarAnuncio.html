@@ -1,0 +1,128 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MeLivro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    <div class="armacao">
+        <br></br>
+          <img src="imagem/logo1.png"  alt="logo" title="MeLivro" height="95px" >
+        <div class="cabecalho">
+                      <button class="button button1">Minhas Vendas</button>
+                      <button class="button button2">Historico</button>
+                      <a href="telacadastro.html"><button class="button button3">Cadastre-se</button></a>
+                      <a href="telalogin.html"><button class="button button4">Entrar</button></a>
+                   
+           </div>
+
+
+           <div class="busca">
+            <form class="form-inline mt-2 mt-md-0">
+        <div class="input-group">
+            <input type="text" class="form-control" size="95" placeholder="Digite o produto desejado">
+             
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >
+                        <img src="imagem/searchicon.png"alt="busca" title="search"  height="15px"/>
+                    </button>
+        
+                    <button class="btn btn-outline-success my-3 my-sm-0" type="submit" >
+                            <img src="imagem/carrinho.png"alt="carrinho" title="carrinho"  height="15px"/>
+                        </button>
+                </form>
+        </div>
+    </div>
+    <br></br>
+         <div id="container_demo" >
+         <a class="hiddenanchor" id="toregister"></a>
+          <div id="wrapper">
+             <div id="register" class="animate form">
+                 <form  action="edit.php" method="post" autocomplete="on"> 
+                    <h1>Edite seu Anúncio</h1> 
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item active"><a class="page-link" href="editarAnuncio.html">Livro</a></li>
+                          <li class="page-item"><a class="page-link" href="editarRevista.html">Revista</a></li>
+                          <li class="page-item"><a class="page-link" href="editarPaper.html">Paper</a></li>
+                        </ul>
+                      </nav>
+                 <div class="row">
+                     <div class="form-group col-md-6">
+                        <p> 
+                            <label for="typesignup" class="youtype" data-icon="t">Tipo</label>
+                                <input class="form-control" type="text" placeholder="Livro" readonly>
+                          </p>
+                     </div>
+                    <div class="form-group col-md-6">
+                       <p> 
+                          <label for="titlesignup" class="youtitle" data-icon="t">Titulo</label>
+                          <input id="titlesignup" name="titlesignup" required="required" type="text" placeholder="Digite o titulo" />                                    
+                       </p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <p> 
+                          <label for="edicaosignup" class="youedicao" data-icon="e">Edição </label>
+                          <input id="edicaosignup" name="edicaosignup" required="required" type="number" placeholder="Digite a edicao"/>  
+                       </p>
+                   </div>
+                    <div class="form-group col-md-6">
+                         <p> 
+                          <label for="autorsignup" class="youautor" data-icon="a" >Autor</label>
+                          <input id="autorsignup" name="autorsignup" required="required" type="text" placeholder="Digite o autor"/>   
+                         </p>
+                    </div>
+                </div>
+               <div class="row">
+                   <div class="form-group col-md-6">
+                     <p> 
+                         <label for="isbnsignup" class="youisbn" data-icon="i" >ISBN</label>
+                        <input id="isbnsignup" name="isbnsignup" required="required" type="text" placeholder="Digite o ISBN do livro"/> 
+                     </p>
+                   </div>
+                 <div class="form-group col-md-6">
+                     <p> 
+                       <label for="pricesignup" class="youprice" data-icon="p" >Preço</label>
+                      <input id="pricesignup" name="pricesignup" required="required" type="number" placeholder="Digite o preço do produto"/>      
+                     </p>
+                </div>
+                <div class="form-group col-md-6">
+                  <p> 
+                    <label for="descricaosignup" class="youdescricao" data-icon="d" >Decrição</label>
+                    <input type="text" class="form-control" name="descricao" maxlength="52" style="height: 70px;">
+                  </p>
+                 </div>
+                <div class="form-group col-md-6">
+                  <p> 
+                     <label for="imagesignup" class="youimage" data-icon="i">Imagem </label>
+                     <input id="imagesignup" name="imagesignup" required="required" type="file"/>
+                 </p>
+                </div>
+             </div>
+              </form>     
+              <div id="actions" class="row">
+                    <div class="btn-group mr-2" role="group" >
+                      <p class="signin button"> 
+                                  <a href="#"><button type="submit" value="Cadastrar" class="btn btn-primary btn-lg btn-block"/>Salvar</button></a>
+                      </p>
+                     </div>
+                     <div class="btn-group mr-2" role="group" >
+                     <p class="cancelar button"> 
+                            <a href="menuPrincipal.html"> <button type="submit" value="Cancelar" class="btn btn-default btn-lg btn-block"/> Cancelar </button> </a>
+                     </p>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+    <br></br>
+    <div class="rodape">
+        Copyright &COPY; 2018 MeLivro. Todos os Direitos Reservados.
+    </div>
+</body>
+</html>

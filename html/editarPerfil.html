@@ -1,0 +1,170 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MeLivro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+   
+</head>
+
+
+
+<body>
+    <div class="armacao">
+        <br></br>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">	
+             <div class="collapse navbar-collapse d-flex flex-row-reverse " id="navbarSupportedContent">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuário </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="perfilUsuario.html">Perfil</a>
+                              <a class="dropdown-item" href="editarPerfil.html">Editar Perfil</a>
+                              <a class="dropdown-item" href="carrinho.html">Pedidos</a>
+                              <a class="dropdown-item" href="menuPrincipal.html">Sair</a>
+    
+                        </div>
+                  </li>
+              </div>
+            </div>
+       </nav>
+            <a href="menuPrincipal.html"><img src="imagem/logo1.png"  alt="logo" title="MeLivro" height="95px" ></a>
+        <div class="cabecalho">
+                      <a href="cadastroAnuncio.html"><button class="button button1">Minhas Vendas</button></a>
+                      <a href="historico.html"><button class="button button2">Historico</button></a>
+                      <a href="telacadastro.html"><button class="button button3">Cadastre-se</button></a>
+                      <a href="telalogin.html"><button class="button button4">Entrar</button></a>            
+         </div>
+                  
+
+        <div class="corpo">
+            
+            <div class="menuContainer">
+                
+                <ul class="menu">
+                    
+                    <li>
+                        <a href="buscaLivros.html">Livro</a>
+                    </li>
+                    
+                    <li>
+                        <a href="buscaRevista.html">Revistas</a>
+                    </li>
+                    
+                    <li>
+                        <a href="buscaPaper.html">Artigos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            </li></li>
+            <br></br>
+
+            <div class="busca">
+                    <form class="form-inline mt-2 mt-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" size="95" placeholder="Digite o produto desejado">
+                     
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >
+                                <img src="imagem/searchicon.png"alt="busca" title="search"  height="15px"/>
+                            </button>
+                
+                            <a href="carrinho.html" class = "btn btn-outline-success my-2 my-sm-0">
+                                <img src="imagem/carrinho.png"alt="carrinho" title="carrinho"  height="21px"/>
+                           </a>
+                        </form>
+                </div>
+            </div>
+            
+            <br></br>
+        <div class="armacao">
+                <div id="container_demo" >
+                      <a class="hiddenanchor" id="toregister"></a>
+                       <div id="wrapper">
+                          <div id="register" class="animate form">
+                   <form  action="edit.php" method="post" autocomplete="on"> 
+                    <h1> Edite seu perfil</h1> 
+                 <div class="row">
+                     <div class="form-group col-md-6">
+                       <p> 
+                         <label for="usernamesignup" class="uname" data-icon="u">Usuário</label>
+                         <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Nome de usuário" />
+                       </p>
+                     </div>
+                    <div class="form-group col-md-6">
+                        <p> 
+                            <label for="passwordsignup" class="youpasswd" data-icon="p">Senha </label>
+                            <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="Digite sua senha"/>  
+                         </p>
+                    </div>
+                    <div class="form-group col-md-6">
+                       <p> 
+                          <label for="cpfsignup" class="youcpf" data-icon="c" >CPF</label>
+                          <input id="cpfsignup" name="cpfsignup" required="required" type="text" placeholder="XXX.XXX.XXX-XX" maxlength="14"/>                                    
+                       </p>
+                   </div>
+                    <div class="form-group col-md-6">
+                         <p> 
+                          <label for="addresssignup" class="youaddress" data-icon="a" > Endereço</label>
+                          <input id="addresssignup" name="addresssignup" required="required" type="text" placeholder="Digite seu endereço"/>   
+                         </p>
+                    </div>
+                </div>
+               <div class="row">
+                   <div class="form-group col-md-6">
+                     <p> 
+                         <label for="emailsignup" class="youmail" data-icon="e" > Email</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="meuemail@mail.com"/> 
+                     </p>
+                   </div>
+                 <div class="form-group col-md-6">
+                    <p> 
+                        <label for="fonesignup" class="youfone" data-icon="f">Telefone </label>
+                        <input id="fonesignup" name="fonesignup" required="required" type="text" placeholder="Digite seu telefone"/>
+                    </p>
+                </div>
+                <div class="form-group col-md-6">
+                    <p> 
+                        <label for="citysignup" class="youcity" data-icon="c" > Cidade</label>
+                       <input id="citysignup" name="citysignup" required="required" type="text" placeholder="Digite sua cidade"/>      
+                      </p>
+                 </div>
+                <div class="form-group col-md-6">
+                    <p> 
+                        <label for="sexsignup" class="yousex" data-icon="s" > Sexo</label>
+                          <select type="text" class="form-control" >
+                             <option value="f">Feminino</option>
+                             <option value="m">Masculino</option>
+                          </select>
+                      </p>
+                </div>
+             </div>
+                  
+            </form>     
+              <div id="actions" class="row">
+                    <div class="btn-group mr-2" role="group" >
+                      <p class="signin button"> 
+                           <a href="#"></a> <button type="submit" value="Salvar" class="btn btn-primary btn-lg btn-block "/> Salvar </button></a>
+                      </p>
+                     </div>
+                     <div class="btn-group mr-2" role="group" >
+                     <p class="cancelar button"> 
+                            <a href="menuPrincipal.html"> <button type="submit" value="Cancelar" class="btn btn-default btn-lg btn-block"/> Cancelar </button> </a>
+                     </p>
+                    </div>
+                  </div>
+
+
+       </div>
+
+      <div class="rodape">
+              Copyright &COPY; 2018 MeLivro. Todos os Direitos Reservados.
+      </div>
+        </body>
+    </html>

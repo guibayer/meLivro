@@ -1,0 +1,93 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MeLivro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="armacao">
+       <br></br>
+      <a href="../index.php">
+       <a href="menuPrincipal.html"><img border="0" alt="MeLivro Logo" title="MeLivro" src="imagem/logo1.png" height="95px"></a>
+      </a>
+      <br></br>
+      <br></br>
+      <div class="conteudo">
+        <form role="form" action="../addUsuario.php" method="post">
+          <fieldset>
+            <div class="row">
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="user"><b>Usuário:</b></label>
+                            <input class="form-control ls-login-bg-user input-lg" name="usuario" type="text" aria-label="Usuário" placeholder="Usuário">                            
+                            </p>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userPassword"><b>Senha:</b></label>
+                            <input class="form-control ls-login-bg-password input-lg" name="pass" type="password" aria-label="Senha" placeholder="Digite sua senha"/> 
+                            </p>
+                        </div>
+
+                         <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userCPF"><b>CPF:</b></label>
+                            <input class="form-control ls-login-bg-cpf input-lg" name="cpf" type="number" aria-label="CPF" placeholder="XXXXXXXXXXX" maxlength="14">
+                            </p>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userEndereco"><b>Endereço:</b></label>
+                            <input class="form-control ls-login-bg-cpf input-lg" name="endereco" type="text" aria-label="Endereço" placeholder="Digite seu endereço"/>
+                            </p>
+                        </div> 
+
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userEmail"><b>Email:</b></label>
+                            <input class="form-control ls-login-bg-cpf input-lg" name="email" type="text" aria-label="E-mail" placeholder="meuemail@mail.com"/>
+                            </p>
+                        </div> 
+
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userTelefone"><b>Telefone:</b></label>
+                            <input class="form-control ls-login-bg-cpf input-lg" name="telefone" type="text" aria-label="Telefone" placeholder="Digite seu telefone"/>
+                            </p>
+                        </div> 
+
+                        <div class="form-group col-md-6">
+                          <p> 
+                            <label for="userCidade"><b>Cidade:</b></label>
+                            <input class="form-control ls-login-bg-cpf input-lg" name="cidade" type="text" aria-label="Cidade" placeholder="Digite sua cidade"/>
+                            </p>
+                        </div> 
+
+                        <div class="form-group col-md-6">
+                        <p> 
+                          <label for="userSexo"> <b>Sexo:</b></label>
+                            <select type="text" class="form-control" name="sex">
+                              <option value="F">Feminino</option>
+                              <option value="M">Masculino</option>
+                            </select>
+                        </p>
+                        </div>
+                        </div>
+                        <input type="submit" value="Cadastrar" class="btn btn-primary btn-lg btn-block">                
+                        </fieldset>
+                </form>
+            </div>
+    
+        <div class="rodape">
+            Copyright &COPY; 2018 MeLivro. Todos os Direitos Reservados.
+        </div>
+    </body>
+</html>
